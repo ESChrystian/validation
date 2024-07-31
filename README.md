@@ -1,10 +1,10 @@
-<h1 align=center style="color:black ;background-color:purple">Validação de CPF e Email</h1>
+<h1 align=center>Validação de CPF e Email</h1>
 
 >Nessa atividade aprendemos o funcionamento de códigos com JavaScript, desevolvendo projetos validando corretamente Email e CPF.
  
  
 
-<h3 align=center style="color:purple">CPF</h3> 
+<h3 align=center >CPF</h3> 
 Elementos utilizados no JavaScript da Validação do CPF:
  
 | Elementos | Explicações |
@@ -47,7 +47,7 @@ O resto da soma é calculado e ajustado para verificar o 10º dígito (primeiro 
 ##
  
 
-<h3 align=center style="color:purple">Email</h3>
+<h3 align=center >Email</h3>
 
 
 **Elementos utilizados no JavaScript da Validação do Email:**
