@@ -1,10 +1,10 @@
-<h1 align=center>Validação de CPF e Email</h1>
+<h1 align=center style="color:black ;background-color:purple">Validação de CPF e Email</h1>
 
 >Nessa atividade aprendemos o funcionamento de códigos com JavaScript, desevolvendo projetos validando corretamente Email e CPF.
  
  
-### CPF
- 
+
+<h3 align=center style="color:purple">CPF</h3> 
 Elementos utilizados no JavaScript da Validação do CPF:
  
 | Elementos | Explicações |
@@ -19,9 +19,9 @@ Elementos utilizados no JavaScript da Validação do CPF:
 | ``replace``  | O ``replace()`` método de ``String`` valores retorna uma nova string com uma, algumas ou todas as correspondências de a ``pattern`` substituídas por a ``replacement``.
 | ``length``  | Cancela o evento se for cancelável, sem parar a propagação do mesmo.
  
-## Explicações do códigos:
+### Explicações do códigos:
  
-### *Parte 1: Configuração do Escutador de Eventos*
+**Parte 1: Configuração do Escutador de Eventos**
 
 | Elementos | Explicações |
 | --- | --- |
@@ -30,29 +30,32 @@ Elementos utilizados no JavaScript da Validação do CPF:
 | ``const cpf = document.getElementById('cpf').value;`` | O código obtém o valor do campo de entrada com o id cpf. |
 | ``const msg = document.getElementById('message');`` | O código obtém o elemento com o id message, onde será exibida a mensagem de validação. | 
 | ``if(validarCPF(cpf)){msg.textContent = 'O CPF é válido!';msg.style.color = 'green';}else{msg.textContent ='O CPF é inválido!';msg.style.color = 'red';}`` | A função validarCPF é chamada com o valor do CPF. Dependendo do resultado (verdadeiro ou falso), a mensagem e a cor são ajustadas para indicar se o CPF é válido ou inválido. |
- 
-### *Parte 2: Função de Validação do CPF*
 
-**function validarCPF(cpf){cpf = cpf.replace(/[^\d]+/g, '');:** O código remove todos os caracteres não numéricos da string de CPF, como pontos e hífens, para deixar apenas os dígitos.
+**Parte 2: Função de Validação do CPF**
 
-**if(cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)){return false; }:** Verifica se o CPF tem exatamente 11 dígitos e se todos os dígitos são iguais. Se não atender a essas condições, o CPF é considerado inválido e a função retorna ``false``.
- 
- 
-* Calcula a Soma Ponderada:
+``function validarCPF:`` O código remove todos os caracteres não numéricos da string de CPF, como pontos e hífens, para deixar apenas os dígitos.
+
+
+#### Estrutura Condicional If Else:
+
+Verifica se o CPF tem exatamente 11 dígitos e se todos os dígitos são iguais. Se não atender a essas condições, o CPF é considerado inválido e a função retorna ``false``.
+>* Calcula a Soma Ponderada:
 Itera sobre os 9 primeiros dígitos do CPF, calculando uma soma ponderada.
-* Calcula o Resto e Verifica:
+>* Calcula o Resto e Verifica:
 O resto da soma é calculado e ajustado para verificar o 10º dígito (primeiro dígito verificador). Se não coincidir com o dígito verificador, retorna ``false``.
  
 ##
  
-### Email
+
+<h3 align=center style="color:purple">Email</h3>
+
+
 **Elementos utilizados no JavaScript da Validação do Email:**
 >function "checarEmail": A função foi criada para checar se o email é válido, após a verificação a função retorna uma mensagem ao usuário informou corretamente seu email.
 
 
  
-## Tecnologias
- 
+### Tecnologias
 <div style="display: inline_block"><br>
    
 <img align="" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
