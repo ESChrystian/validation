@@ -1,38 +1,75 @@
-html {
-    height: 100vh;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("carteira-de-trabalho-digital-.jpg");
+    background-size: cover;
+    background-position: center;
+    color:  rgb(55, 55, 187);
+}
+input {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 250px;
+    background-color: rgb(55, 55, 187);
     color: white;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
 }
-.form{
+
+label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+   
+}
+.valid {
     display: flex;
-    align-items: center;
-    height: 100vh;
+    height:100vh;
+    align-items: center;    
     justify-content: center;
-
-
 }
-form{
+form {
     display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 30vh;
+    margin-top: 30px;
     place-content: center;
     text-align: center;
-    background-color: brown;
-    border-radius: 30px;
-}
-
-input{
-    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 40vh;
+    width: 50vh;
     border-radius: 20px;
-    border: none;
-    outline: none;
-    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 8px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-button{
-    margin-left: 50px;
+button {
+    position: relative;
+    left: 95px;
+    margin-top: 10px;
+    border: none;
     border-radius: 10px;
-    outline: none;
-    margin-right: 50px;
-    cursor: pointer;
+    background-color: rgb(55, 55, 187);
+    height: 30px;
+    width: 60px;
+    color: #fff;
+
+
 }
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s ease;
+}
+
+#message {
+    width: 150px;
+    height: 30px;
+    place-content: center;
+    font-weight: 600;
+    
+    
+} 
